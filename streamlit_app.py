@@ -10,7 +10,7 @@ from backend.utils import (
 
 # Configuração da página
 st.set_page_config(
-    page_title="AutoQuizzer",
+    page_title="Quiz",
     page_icon="🧑‍🏫",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -48,7 +48,7 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
     <h1>🧑‍🏫 AutoQuizzer</h1>
-    <p style="font-size: 1.2rem;">O AutoQuizzer gera um quiz a partir de uma URL. Você pode jogar o quiz, ou deixar a LLM jogar.</p>
+    <p style="font-size: 1.2rem;">O sistema gera um quiz a partir de uma URL. Você pode jogar o quiz, ou deixar a LLM jogar.</p>
     <p><strong>Construído com: 🏗️ Haystack • 🤖 GPT-4o-mini • ⚡ OpenAI</strong></p>
 </div>
 """, unsafe_allow_html=True)
@@ -300,11 +300,11 @@ if st.session_state.show_llm_results and st.session_state.quiz:
                     st.error(f"❌ Erro no RAG Web: {str(e)}")
 
 # Informações sobre o projeto
-with st.expander("ℹ️ Sobre o AutoQuizzer"):
+with st.expander("ℹ️ Sobre o Quiz"):
     st.markdown("""
-    ### 🧑‍🏫 AutoQuizzer
+    ### 🧑‍🏫 Quiz
     
-    O AutoQuizzer é uma aplicação que gera questionários de múltipla escolha a partir de conteúdo web.
+    Aplicação de teste que gera questionários de múltipla escolha a partir de conteúdo web.
     
     **Funcionalidades:**
     - 📝 Geração automática de questionários a partir de URLs
