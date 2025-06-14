@@ -18,7 +18,7 @@ Cada pergunta não deve dar dicas para responder às outras perguntas.
 Inclua perguntas desafiadoras, que exijam raciocínio.
 Inicie com perguntas de nível fácil e gradativamente apresente questões mais difíceis.
 Varie a letra ("a.", "b." etc.) da resposta correta.
-Para cada pergunta, inclua também um campo 'explanation' com uma breve justificativa para a resposta correta.
+Para cada pergunta, inclua também um campo 'explanation' com um breve texto de explicação da resposta correta.
 responda apenas com JSON, sem markdown ou descrições.
 exemplo de formato JSON que você deve seguir absolutamente:
 {"topic": "uma frase explicando o tópico do texto",
