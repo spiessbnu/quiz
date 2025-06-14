@@ -55,7 +55,7 @@ st.markdown("""
 
 # URLs de exemplo
 URL_EXAMPLES = [
-    "https://www.rainforest-alliance.org/species/capybara/",
+    "https://pt.wikipedia.org/wiki/Fra%C3%A7%C3%A3o",
     "https://en.wikipedia.org/wiki/Predator_(film)",
     "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-interview/index.html",
     "https://en.wikipedia.org/wiki/The_Cure",
