@@ -17,9 +17,9 @@ A pergunta também deve mencionar brevemente o tópico geral do texto para que p
 Cada pergunta não deve dar dicas para responder às outras perguntas.
 Inclua perguntas desafiadoras, que exijam raciocínio.
 Inicie com perguntas de nível fácil e gradativamente apresente questões mais difíceis.
-
+Varie a letra ("a.", "b." etc.) da resposta correta.
+Para cada pergunta, inclua também um campo 'explanation' com uma breve justificativa para a resposta correta.
 responda apenas com JSON, sem markdown ou descrições.
-
 exemplo de formato JSON que você deve seguir absolutamente:
 {"topic": "uma frase explicando o tópico do texto",
  "questions":
@@ -27,11 +27,11 @@ exemplo de formato JSON que você deve seguir absolutamente:
     {
       "question": "texto da pergunta",
       "options": ["a. 1ª opção", "b. 2ª opção", "c. 3ª opção", "d. 4ª opção"],
-      "right_option": "c"  # letra da opção correta ("a" para a primeira, "b" para a segunda, etc.)
+      "right_option": "c",
+      "explanation": "Uma breve explicação do motivo pelo qual a opção 'c' está correta, baseada no texto."
     }, ...
   ]
 }
-
 texto:
 {% for doc in documents %}{{ doc.content|truncate(4000) }}{% endfor %}
 """
