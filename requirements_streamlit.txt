@@ -1,0 +1,5 @@
+haystack-ai==2.2.0
+json-repair
+openai
+streamlit
+
