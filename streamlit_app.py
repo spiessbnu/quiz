@@ -116,14 +116,14 @@ with col2:
     generate_btn = st.button("🎯 Gerar Questionário", type="primary")
 
 # URLs de exemplo
-st.write("**URLs de Exemplo:**")
-example_cols = st.columns(3)
-for i, example_url in enumerate(URL_EXAMPLES[:6]):
-    col_idx = i % 3
-    with example_cols[col_idx]:
-        if st.button(f"Exemplo {i+1}", key=f"example_{i}"):
-            st.session_state.url_input = example_url
-            st.rerun()
+#st.write("**URLs de Exemplo:**")
+#example_cols = st.columns(3)
+#for i, example_url in enumerate(URL_EXAMPLES[:6]):
+ #   col_idx = i % 3
+  #  with example_cols[col_idx]:
+   #     if st.button(f"Exemplo {i+1}", key=f"example_{i}"):
+    #        st.session_state.url_input = example_url
+     #       st.rerun()
 
 # Geração do quiz
 if generate_btn and url:
