@@ -115,16 +115,6 @@ with col2:
     st.write("")  # Espaçamento
     generate_btn = st.button("🎯 Gerar Questionário", type="primary")
 
-# URLs de exemplo
-#st.write("**URLs de Exemplo:**")
-#example_cols = st.columns(3)
-#for i, example_url in enumerate(URL_EXAMPLES[:6]):
- #   col_idx = i % 3
-  #  with example_cols[col_idx]:
-   #     if st.button(f"Exemplo {i+1}", key=f"example_{i}"):
-    #        st.session_state.url_input = example_url
-     #       st.rerun()
-
 # Geração do quiz
 if generate_btn and url:
     with st.spinner("🔄 Gerando questionário..."):
@@ -171,9 +161,15 @@ if st.session_state.quiz_generated and st.session_state.quiz:
                 else:
                     st.markdown(f'<p class="result-wrong">❌ Sua resposta: {user_answer} - Errado</p>', unsafe_allow_html=True)
                     st.markdown(f'<p>✅ Resposta correta: {correct_answer}</p>', unsafe_allow_html=True)
+                    # Adicionando a explicação
+                    if "explanation" in question and question["explanation"]:
+                        st.info(f"**Explicação:** {question['explanation']}")
             else:
                 st.markdown(f'<p class="result-wrong">❌ Não respondida</p>', unsafe_allow_html=True)
                 st.markdown(f'<p>✅ Resposta correta: {correct_answer}</p>', unsafe_allow_html=True)
+                # Adicionando a explicação também para questões não respondidas
+                if "explanation" in question and question["explanation"]:
+                    st.info(f"**Explicação:** {question['explanation']}")
         
         st.write("---")
     
