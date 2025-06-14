@@ -55,16 +55,10 @@ st.markdown("""
 
 # URLs de exemplo
 URL_EXAMPLES = [
-    "https://www.rainforest-alliance.org/species/capybara/",
-    "https://en.wikipedia.org/wiki/Predator_(film)",
-    "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-interview/index.html",
-    "https://en.wikipedia.org/wiki/The_Cure",
-    "https://en.wikipedia.org/wiki/Masters_of_Doom",
-    "https://www.rainforest-alliance.org/species/howler-monkey/",
-    "https://lite.cnn.com/2024/05/23/travel/star-wars-hotel-disney-jenny-nicholson-cec/index.html",
-    "https://en.wikipedia.org/wiki/Indiana_Jones_(character)",
-    "https://www.rainforest-alliance.org/species/river-dolphin/",
-    "https://www.rainforest-alliance.org/species/sloth/",
+    "https://www.furb.br/web/1488/institucional/a-furb/apresentacao",
+    "https://www.blumenau.sc.gov.br/blumenau/perfildacidade",
+    "https://pt.wikipedia.org/wiki/Fra%C3%A7%C3%A3o",
+    "https://pt.wikipedia.org/wiki/Rede_neural_artificial",    
 ]
 
 # Inicialização do estado da sessão
