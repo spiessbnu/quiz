@@ -16,6 +16,7 @@ Cada opção deve começar com uma letra seguida por um ponto e um espaço (ex: 
 A pergunta também deve mencionar brevemente o tópico geral do texto para que possa ser compreendida isoladamente.
 Cada pergunta não deve dar dicas para responder às outras perguntas.
 Inclua perguntas desafiadoras, que exijam raciocínio.
+Inicie com perguntas de nível fácil e gradativamente apresente questões mais difíceis.
 
 responda apenas com JSON, sem markdown ou descrições.
 
