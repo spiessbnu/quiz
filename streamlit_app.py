@@ -53,16 +53,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-'''
-# URLs de exemplo
-URL_EXAMPLES = [
-    "https://www.furb.br/web/1488/institucional/a-furb/apresentacao",
-    "https://www.blumenau.sc.gov.br/blumenau/perfildacidade",
-    "https://pt.wikipedia.org/wiki/Fra%C3%A7%C3%A3o",
-    "https://pt.wikipedia.org/wiki/Rede_neural_artificial",    
-]
-'''
-
 # Inicialização do estado da sessão
 if 'quiz' not in st.session_state:
     st.session_state.quiz = None
@@ -110,18 +100,6 @@ with col1:
 with col2:
     st.write("")  # Espaçamento
     generate_btn = st.button("🎯 Gerar Questionário", type="primary")
-
-'''
-# URLs de exemplo
-st.write("**URLs de Exemplo:**")
-example_cols = st.columns(3)
-for i, example_url in enumerate(URL_EXAMPLES[:6]):
-    col_idx = i % 3
-    with example_cols[col_idx]:
-        if st.button(f"Exemplo {i+1}", key=f"example_{i}"):
-            st.session_state.url_input = example_url
-            st.rerun()
-'''
 
 # Geração do quiz
 if generate_btn and url:
