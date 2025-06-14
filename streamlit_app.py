@@ -47,7 +47,7 @@ st.markdown("""
 # Cabeçalho principal
 st.markdown("""
 <div class="main-header">
-    <h1>🧑‍🏫 AutoQuizzer</h1>
+    <h1>🧑‍🏫 Quiz</h1>
     <p style="font-size: 1.2rem;">O sistema gera um quiz a partir de uma URL. Você pode jogar o quiz, ou deixar a LLM jogar.</p>
     <p><strong>Construído com: 🏗️ Haystack • 🤖 GPT-4o-mini • ⚡ OpenAI</strong></p>
 </div>
